@@ -5,6 +5,8 @@
 
 ## 🚀 Features
 
+- 🎪 [**Demo & Playground**](https://stackblitz.com/edit/vitejs-vite-zl2e2d)
+
 - 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
 
 - 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/)
@@ -47,7 +49,7 @@ import { Spoiler } from 'vue-spoiler'
 | tooltipText        | `string`  | Click to reveal | no       | Tooltip shown on hover               |
 | hoverMode          | `boolean` | false           | no       | Change to hover to show content mode |
 
-###Events
+### Events
 
 | Events   | Descriptions                                                                         |
 | -------- | ------------------------------------------------------------------------------------ |
