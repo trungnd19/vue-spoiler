@@ -4,7 +4,8 @@
 <p  align="center">Lightweight Vue component to hide text until the user clicks or hovers, inspired by Reddit spoiler tag.</p>
 
 ## 🚀 Features
-
+- 🎪 [**Demo & Playground**](https://stackblitz.com/edit/vitejs-vite-zl2e2d)
+  
 - 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
 
 - 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/)
