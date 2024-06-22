@@ -4,8 +4,8 @@
 <p  align="center">Lightweight Vue component to hide text until the user clicks or hovers, inspired by Reddit spoiler tag.</p>
 
 ## 🚀 Features
+
 - 🎪 [**Demo & Playground**](https://stackblitz.com/edit/vitejs-vite-zl2e2d)
-  
 - 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
 
 - 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/)
@@ -23,18 +23,17 @@ npm  i  vue-spoiler
 ## 🦄 Usage
 
 ```vue
-<script  setup  lang="ts">
-import { Spoiler } from  "vue-spoiler";
+<script setup lang="ts">
+import { Spoiler } from 'vue-spoiler'
 </script>
 <template>
+  // Hide your text content
+  <Spoiler>Your text to hide</Spoiler>
 
-// Hide your text content
-<Spoiler>Your  text  to  hide</Spoiler>
-
-// Hide your elements/ component
-<Spoiler>
-	<YourComponent />
-</Spoiler>
+  // Hide your elements/ component
+  <Spoiler>
+    <YourComponent />
+  </Spoiler>
 </template>
 ```
 
@@ -49,7 +48,7 @@ import { Spoiler } from  "vue-spoiler";
 | tooltipText        | `string`  | Click to reveal | no       | Tooltip shown on hover               |
 | hoverMode          | `boolean` | false           | no       | Change to hover to show content mode |
 
-###Events
+### Events
 
 | Events   | Descriptions                                                                         |
 | -------- | ------------------------------------------------------------------------------------ |
