@@ -1,8 +1,29 @@
 {
   "name": "vue-spoiler",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "description": "Lightweight Vue component to hide text until the user clicks or hovers, inspired by Reddit spoiler tag.",
+  "author": "trungnd19<https://github.com/trungnd19>",
+  "license": "MIT",
+  "keywords": [
+    "spoiler",
+    "spoiler tag",
+    "vue spoiler tag"
+  ],
+  "homepage": "https://github.com/trungnd19/vue-spoiler",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-spoiler.umd.cjs",
+  "module": "./dist/vue-spoiler.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-spoiler.js",
+      "require": "./dist/vue-spoiler.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/types.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -11,10 +32,12 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "generate:types": "vue-tsc --declaration --emitDeclarationOnly --outdir ./dist"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-demi": "^0.14.8"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
@@ -33,7 +56,18 @@
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
     "vite": "^5.2.8",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
     "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.11"
+    "vue-tsc": "^2.0.11",
+    "vue": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   }
 }
