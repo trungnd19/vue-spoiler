@@ -1,8 +1,16 @@
 {
   "name": "vue-spoiler",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "description": "Lightweight Vue component to hide text until the user clicks or hovers, inspired by Reddit spoiler tag.",
+  "author": "trungnd19<https://github.com/trungnd19>",
+  "license": "MIT",
+  "keywords": [
+    "spoiler",
+    "spoiler tag",
+    "vue spoiler tag"
+  ],
+  "homepage": "https://github.com/trungnd19/vue-spoiler",
   "files": [
     "dist"
   ],
@@ -28,7 +36,8 @@
     "generate:types": "vue-tsc --declaration --emitDeclarationOnly --outdir ./dist"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-demi": "^0.14.8"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
@@ -49,6 +58,16 @@
     "vite": "^5.2.8",
     "vite-plugin-css-injected-by-js": "^3.5.1",
     "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.11"
+    "vue-tsc": "^2.0.11",
+    "vue": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   }
 }

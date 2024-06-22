@@ -1,45 +1,59 @@
-# vue-spoiler
+<h1  align="center">
+	Vue Spoiler Tag
+</h1>
+<p  align="center">Lightweight Vue component to hide text until the user clicks or hovers, inspired by Reddit spoiler tag.</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+## 🚀 Features
 
-## Recommended IDE Setup
+- 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/)
 
-## Type Support for `.vue` Imports in TS
+- 🔋 **SSR Friendly**: Nuxt, Vitepress are supported
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 🔩 **Easy to use**: Just import the component, pass in the content you want to hide and voila, you are good to go!
 
-## Customize configuration
+## 📦 Install
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+npm  i  vue-spoiler
 ```
 
-### Compile and Hot-Reload for Development
+## 🦄 Usage
 
-```sh
-npm run dev
+```ts
+<script  setup  lang="ts">
+import { Spoiler } from  "vue-spoiler";
+</script>
+<template>
+
+// Hide your text content
+Spoiler: <Spoiler>Your  text  to  hide</Spoiler>
+
+// Hide your elements/ component
+<Spoiler>
+	<YourComponent />
+</Spoiler>
+</template>
 ```
 
-### Type-Check, Compile and Minify for Production
+## API
 
-```sh
-npm run build
-```
+### Props
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+| Props              | Type      | Default         | Required | Description                          |
+| ------------------ | --------- | --------------- | -------- | ------------------------------------ |
+| tagBackgroundColor | `string`  | #131313         | no       | Background color of hidden state     |
+| tagTextColor       | `string`  | transparent     | no       | Text color of hidden state           |
+| tooltipText        | `string`  | Click to reveal | no       | Tooltip shown on hover               |
+| hoverMode          | `boolean` | false           | no       | Change to hover to show content mode |
 
-```sh
-npm run test:unit
-```
+###Events
 
-### Lint with [ESLint](https://eslint.org/)
+| Events   | Descriptions                                                                         |
+| -------- | ------------------------------------------------------------------------------------ |
+| (reveal) | Fired when content is clicked (hoverMode false) or when content is hovered/unhovered |
 
-```sh
-npm run lint
-```
+## License
+
+MIT © [trungnd19](https://github.com/trungnd19)
