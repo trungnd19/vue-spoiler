@@ -21,14 +21,14 @@ npm  i  vue-spoiler
 
 ## 🦄 Usage
 
-```ts
+```vue
 <script  setup  lang="ts">
 import { Spoiler } from  "vue-spoiler";
 </script>
 <template>
 
 // Hide your text content
-Spoiler: <Spoiler>Your  text  to  hide</Spoiler>
+<Spoiler>Your  text  to  hide</Spoiler>
 
 // Hide your elements/ component
 <Spoiler>
