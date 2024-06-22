@@ -6,7 +6,6 @@
 ## 🚀 Features
 
 - 🎪 [**Demo & Playground**](https://stackblitz.com/edit/vitejs-vite-zl2e2d)
-
 - 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
 
 - 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/)
